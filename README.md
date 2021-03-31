@@ -12,8 +12,7 @@ The ETL loads song and log data in JSON format from S3 and processes the data in
 * `load_dimension_table_subdag.py` contains the subdag for loading the dimensional tables.
 * `create_tables.sql` contains the SQL queries used to create all the required tables in Redshift. It should be placed in the `dags` directory of your Airflow installation.
 * `sql_queries.py` contains the SQL queries for creating and loading the tables used in the ETL process. It should be placed in the `plugins/helpers` directory of your Airflow installation.
-* `Airflow_dag2.png` contains the image of the DAG in Apache Airflow.
-* `Airflow_subdag.png` contains the image of the zoomed-in subDAG.
+* `images/` contains the images of the DAG and subDAG in Apache Airflow.
 * `README.md` this very file that discusses the specifics and process of the project.
 
 The following operators should be placed in the `plugins/operators` directory of
@@ -38,6 +37,6 @@ your Airflow installation:
 
 ### Pipeline
 
-![Airflow DAG](Airflow_dag2.png)
+![Airflow DAG](images/Airflow_dag2.png)
 
-![Airflow SubDAG](Airflow_subdag.png)
+![Airflow SubDAG](images/Airflow_subdag.png)
